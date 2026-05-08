@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(135deg, #e8f6f8, #c7eef4);
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+/* LOGIN + SIGNUP BOX */
+.login-container,
+.home-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #0f4c5c;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border: 1px solid #c7eef4;
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: 0.3s;
+    color: #0f4c5c;
+
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #16A3B7;
+    box-shadow: 0 0 8px rgba(22,163,183,0.3);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+
+    background: #16A3B7;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0f4c5c;
+}
+
+/* LINKS */
+a {
+    color: #16A3B7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ERROR MESSAGE */
+#error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}

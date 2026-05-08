@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment</title>
+    <link rel="stylesheet" href="navBar.css">
+
+<link rel="stylesheet" href="loader.css" />
+  <script>
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".wrapper");
+
+    loader.style.opacity = "0";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 500);
+});
+</script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e8f6f8, #c7eef4);
+            color: #0f4c5c;
+            padding-top: 75px;
+        }
+
+        header {
+            background-color: #16A3B7;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #16A3B7;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #138a9b;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+   
+<div class="wrapper">
+    <div class="blockcont">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</div>
+
+      <!-- Navbar -->
+  <div class="sidebar">
+    <a href="index.html"><button class="nav-btn">Home</button></a>
+    <a href="rana.html"><button class="nav-btn">Departments</button></a>
+    <a href="doc.html"><button class="nav-btn">Doctors</button></a>
+    <a href="Hospital appointments.html"><button class="nav-btn">Appointments</button></a>
+    <a href="serv.html"><button class="nav-btn">Services</button></a>
+    <a href="about us index.html"><button class="nav-btn">About Us</button></a>
+  </div>
+
+    <header>
+        PureCare - Appointment
+    </header>
+
+    <div class="container">
+        <h2>Book an Appointment</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Write your Name">
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="01XXXXXXXXX">
+
+            <label>Departments</label>
+            <select>
+                <option>Select a Departments</option>
+                <option>Cardiology</option>
+                <option>Pediatrics</option>
+                <option>Orthopedics</option>
+                <option>Internal Medicine</option>
+                <option>Dermatology</option>
+                <option>Ophthalmology</option>
+                <option>Emergency</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date">
+
+            <label>Time</label>
+            <input type="time">
+
+            <button type="submit">Booking confirmation</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2026 PureCare Hospital
+    </footer>
+
+</body>
+
+</html>

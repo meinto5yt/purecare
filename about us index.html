@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="about us style.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="loader.css" />
+  <script>
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".wrapper");
+
+    loader.style.opacity = "0";
+
+    setTimeout(() => {
+        loader.style.display = "none";
+    }, 500);
+});
+</script>
+</head>
+<body>
+   
+<div class="wrapper">
+    <div class="blockcont">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</div>
+
+      <!-- Navbar -->
+  <div class="sidebar">
+    <a href="index.html"><button class="nav-btn">Home</button></a>
+    <a href="rana.html"><button class="nav-btn">Departments</button></a>
+    <a href="doc.html"><button class="nav-btn">Doctors</button></a>
+    <a href="Hospital appointments.html"><button class="nav-btn">Appointments</button></a>
+    <a href="serv.html"><button class="nav-btn">Services</button></a>
+    <a href="about us index.html"><button class="nav-btn">About Us</button></a>
+  </div>
+
+    <section class="hero">
+        <h1>About Our Hospital</h1>
+        <p>We care about your health</p>
+    </section>
+
+
+    <section class="about container">
+        <div class="text">
+            <h2>Who We Are</h2>
+
+            <p>providing high-quality medical services with compassion, professionalism, and advanced technology.
+                <br>
+
+                Our hospital was established to serve the community with a mission to deliver exceptional healthcare in
+                a safe and friendly environment. We bring together a team of highly qualified doctors, experienced
+                nurses, and skilled staff to ensure the best care for our patients.
+                <br>
+                We offer a wide range of medical services including emergency care, outpatient clinics, diagnostic
+                services, and specialized treatments.
+                <br>
+                At Al-Rahma Hospital, we believe that every patient deserves personalized care. We focus on building trust
+                with our patients through transparency, respect, and continuous improvement.
+            </p>
+
+        </div>
+
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-dQ_08HZ8mm8P1-jIP4qaSfZt7QBEeGTpxg&s"
+                alt="hospital">
+        </div>
+    </section>
+
+
+    <section class="mv">
+        <div class="box">
+            <h2>Our Mission</h2>
+            <p>Our mission is to deliver exceptional healthcare services with compassion, integrity, and
+                professionalism. We aim to improve the health and well-being of our community through continuous
+                innovation and patient-centered care.</p>
+        </div>
+
+        <div class="box">
+            <h2>Our Vision</h2>
+            Our vision is to become a leading and trusted healthcare provider, recognized for excellence in medical
+            services, advanced technology, and outstanding patient experience.
+        </div>
+    </section>
+
+
+    <section class="why">
+        <h2>Why Choose Us</h2>
+
+        <div class="cards">
+            <div class="card">✔ Qualified Doctors</div>
+            <div class="card">✔ 24/7 Emergency</div>
+            <div class="card">✔ Modern Equipment</div>
+            <div class="card">✔ Affordable Prices</div>
+        </div>
+    </section>
+
+
+    <section class="stats">
+        <div class="stat">
+            <h2>500+</h2>
+            <p>Patients Daily</p>
+        </div>
+
+        <div class="stat">
+            <h2>50+</h2>
+            <p>Doctors</p>
+        </div>
+
+        <div class="stat">
+            <h2>10+</h2>
+            <p>Departments</p>
+        </div>
+    </section>
+
+    <script>
+        let stats = document.querySelectorAll(".stat h2");
+
+        stats.forEach(stat => {
+            let count = 0;
+            let target = parseInt(stat.innerText);
+
+            let interval = setInterval(() => {
+                count++;
+                stat.innerText = count;
+
+                if (count == target) clearInterval(interval);
+            }, 10);
+        });
+    </script>
+
+
+
+</body>
+
+</html>
